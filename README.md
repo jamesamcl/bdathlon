@@ -13,7 +13,7 @@ Problem 2
 ---------
 
 We have implemented a Java application which can convert a subset of BioPAX to
-SBOL2.  The source can be found in the `Problem2` directory.
+SBOL2.  The source and readme can be found in the `Problem2` directory.
 
 
 
