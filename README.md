@@ -5,20 +5,23 @@ BDathlon 2016
 Problem 1
 ---------
 
-We have implemented the repressilator circuit in Eugene.
+We have implemented the repressilator circuit and a Turing pattern circuit in
+Eugene.  We have documented issues we found with Eugene in `Problem1/eugene.pdf`.
 
 
 Problem 2
 ---------
 
 We have implemented a Java application which can convert a subset of BioPAX to
-SBOL2.  Currently, the converter supports 
+SBOL2.  The source can be found in the `Problem2` directory.
 
 
 
 
 Problem 3
 ---------
+
+ran out of time sorry :-(
 
 
 
