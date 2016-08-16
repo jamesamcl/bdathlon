@@ -1,0 +1,125 @@
+/* 
+BDAthlon Team J3
+
+lacI-TetR-cI Repressilator (Elowitz et al. 2000)
+
+Authors:
+James McLaughlin, Jonny Naylor, Jeremy Revell
+*/
+
+
+/*
+Property definitions:
+*/
+
+Property Sequence(txt);					//Promoter sequence
+Property Neg35StartEnd(txt); 			//Promoter information
+Property Neg10StartEnd(txt); 			//Promoter information
+Property OperatorSites(txt[]); 			//An array of promoter information
+Property OperatorSiteLocations(txt[]); 	//An array of promoter information
+Property CorrespondingProtein(txt); 	//Which protein the part produces
+Property ProteinBindingInfo(txt); 		//Protein interaction information
+
+
+/*
+Part definitions:
+*/
+
+PartType Promoter(Sequence, Neg35StartEnd, Neg10StartEnd, OperatorSites, OperatorSiteLocations);
+PartType RBS(Sequence);
+PartType CodingSequence(Sequence, CorrespondingProtein, ProteinBindingInfo);
+PartType Terminator(Sequence);
+
+
+/*
+Part declarations:
+*/
+
+Promoter plac(.pigeon("p plac 14"));
+Promoter ptet(.pigeon("p ptet 14"));
+Promoter plambdaPR(.pigeon("p lambdaPR 14"));
+  
+CodingSequence CDStetR(.pigeon("c tetR 3"));
+CodingSequence CDSlacI(.pigeon("c lacI 4"));
+CodingSequence CDScI(.pigeon("c cI 5"));
+
+RBS RBStetR(.pigeon("r RBS 3"));
+RBS RBSlacI(.pigeon("r RBS 4"));
+RBS RBScI(.pigeon("r RBS 5"));
+
+Terminator TtetR(.pigeon("t T 14"));
+Terminator TlacI(.pigeon("t T 14"));
+Terminator TcI(.pigeon("t T 14"));
+
+
+/*
+Device specification:
+*/
+
+Device Repressilator(plac, RBStetR, CDStetR, TtetR, plambdaPR, RBSlacI, CDSlacI, TlacI, ptet, RBScI, CDScI, TcI);
+
+
+/*
+Rule specification:
+*/
+
+//Each Promoter appears before a RBS:
+Rule pBeforeRBS1(ON Repressilator: plac BEFORE RBStetR);
+Rule pBeforeRBS2(ON Repressilator: ptet BEFORE RBScI);
+Rule pBeforeRBS3(ON Repressilator: plambdaPR BEFORE RBSlacI);
+
+//Each Promoter appears before a coding region:
+Rule pBeforeCDS1(ON Repressilator: plac BEFORE CDStetR);
+Rule pBeforeCDS2(ON Repressilator: ptet BEFORE CDScI);
+Rule pBeforeCDS3(ON Repressilator: plambdaPR BEFORE CDSlacI);
+
+//Each RBS is immediately prior to a coding region:
+Rule RBSBeforeCDS1(ON Repressilator: RBStetR BEFORE CDStetR);
+Rule RBSBeforeCDS2(ON Repressilator: RBScI BEFORE CDScI);
+Rule RBSBeforeCDS3(ON Repressilator: RBSlacI BEFORE CDSlacI);
+
+
+Rule RBSNextCDS1(ON Repressilator: RBStetR NEXTTO CDStetR);
+Rule RBSNextCDS2(ON Repressilator: RBScI NEXTTO CDScI);
+Rule RBSNextCDS3(ON Repressilator: RBSlacI NEXTTO CDSlacI);
+
+//Each Terminator appears after a coding region:
+Rule TAfterCDS1(ON Repressilator: TtetR AFTER CDStetR);
+Rule TAfterCDS2(ON Repressilator: TcI AFTER CDScI);
+Rule TAfterCDS3(ON Repressilator: TlacI AFTER CDSlacI);
+
+Rule TNextCDS1(ON Repressilator: TtetR NEXTTO CDStetR);
+Rule TNextCDS2(ON Repressilator: TcI NEXTTO CDScI);
+Rule TNextCDS3(ON Repressilator: TlacI NEXTTO CDSlacI);
+
+//Each coding region and promoter should occur once in the Repressilator:
+Rule numCDS1(ON Repressilator: CDStetR EXACTLY 1);
+Rule numCDS2(ON Repressilator: CDScI EXACTLY 1);
+Rule numCDS3(ON Repressilator: CDSlacI EXACTLY 1);
+
+Rule numP1(ON Repressilator: plac EXACTLY 1);
+Rule numP2(ON Repressilator: ptet EXACTLY 1);
+Rule numP3(ON Repressilator: plambdaPR EXACTLY 1);
+
+Rule numT1(ON Repressilator: TlacI EXACTLY 1);
+Rule numT2(ON Repressilator: TtetR EXACTLY 1);
+Rule numT3(ON Repressilator: TcI EXACTLY 1);
+
+Rule numR1(ON Repressilator: RBStetR EXACTLY 1);
+Rule numR2(ON Repressilator: RBScI EXACTLY 1);
+Rule numR3(ON Repressilator: RBSlacI EXACTLY 1);
+
+//Repressor interactions:
+
+Rule lacI_Repress_tetR(ON Repressilator: CDSlacI REPRESSES ptet);
+Rule tetR_Repress_lambdaPR(ON Repressilator: CDStetR REPRESSES plambdaPR);
+Rule cI_Repress_lacI(ON Repressilator: CDScI REPRESSES plac);
+
+//Forward Orientation:
+Rule allforward(ON Repressilator: ALL_FORWARD);
+
+
+//Possible devices
+devices = product(Repressilator);
+
+println(devices);

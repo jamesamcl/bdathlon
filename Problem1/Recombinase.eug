@@ -1,0 +1,33 @@
+// DataBase Creation:
+PartType RecombinaseSite;
+PartType Promoter;
+PartType Gene;
+PartType Terminator;
+PartType GenericPart;
+
+
+//R1 -> R7
+RecombinaseSite R1;
+RecombinaseSite R2;
+RecombinaseSite R3;
+RecombinaseSite R4;
+RecombinaseSite R5;
+RecombinaseSite R6;
+RecombinaseSite R7;
+
+//Parts -> Parts are made of terminators, promoters and genes. (Or blank). 23 parts in the paper. 
+FOR(num i=1; i<=23; i=i+1)
+{
+  	GenericPart ${"P"+i};
+	SAVE(${"P"+i});
+}
+
+
+Device RegisterTemplate(GenericPart, R1, GenericPart, 
+                        R2, GenericPart, R3, 
+                        GenericPart, R4, GenericPart, 
+                        R5, GenericPart, R6, 
+                        GenericPart, R7, GenericPart);
+
+lst = product(RegisterTemplate);
+println(sizeof(lst));
