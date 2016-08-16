@@ -1,0 +1,41 @@
+{
+    "port": 9090,
+
+    "triplestore": {
+        "url": "http://localhost:1234/openrdf-sesame",
+        "defaultStore": "bdathlon"
+    },
+
+    "prefixes": {
+        "bacillondex": "http://www.bacillondex.org/",
+        "synbiohub": "http://synbiohub.org#",
+        "ecolikb": "http://ecolikb.org/"
+    },
+
+    "otherStacks": [
+    ],
+
+    "iceRegistries": [
+        {
+            "url": "http://localhost:1235",
+            "email": "Administrator",
+            "password": "Administrator"
+        }
+    ],
+
+    "users": [
+        {
+            "name": "admin",
+            "password": "admin",
+            "permissions": [
+                "create", "upload", "retrieve", "sparql"
+            ]
+        }
+    ],
+
+    "anonymousPermissions": [
+        "create", "upload", "retrieve", "sparql"
+    ],
+
+    "uploadLimit": "150mb"
+}

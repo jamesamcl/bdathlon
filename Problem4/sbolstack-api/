@@ -1,0 +1,47 @@
+Initial commit
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   .gitignore
+#	new file:   config/default.json
+#	new file:   index.js
+#	new file:   lib/app.js
+#	new file:   lib/auth.js
+#	new file:   lib/endpoint/CountEndpoint.js
+#	new file:   lib/endpoint/CreateStore.js
+#	new file:   lib/endpoint/MetadataEndpoint.js
+#	new file:   lib/endpoint/PrefixesEndpoint.js
+#	new file:   lib/endpoint/SBOLEndpoint.js
+#	new file:   lib/endpoint/SPARQLEndpoint.js
+#	new file:   lib/endpoint/SearchMetadataCountEndpoint.js
+#	new file:   lib/endpoint/SearchMetadataEndpoint.js
+#	new file:   lib/endpoint/SearchSBOLComponentSummaryCountEndpoint.js
+#	new file:   lib/endpoint/SearchSBOLComponentSummaryEndpoint.js
+#	new file:   lib/endpoint/SearchSBOLEndpoint.js
+#	new file:   lib/endpoint/UploadEndpoint.js
+#	new file:   lib/endpoint/constructQuery.js
+#	new file:   lib/endpoint/getRepository.js
+#	new file:   lib/endpoint/queryToArray.js
+#	new file:   lib/loadTemplate.js
+#	new file:   lib/sbolRdfToXml.js
+#	new file:   lib/sbolRdfToXmlWorker.js
+#	new file:   lib/sbolToSparql.js
+#	new file:   lib/sparql.js
+#	new file:   package.json
+#	new file:   server.js
+#	new file:   sparql/Count.sparql
+#	new file:   sparql/Describe.sparql
+#	new file:   sparql/GetMetadata.sparql
+#	new file:   sparql/RetrieveSBOL.sparql
+#	new file:   sparql/SearchMetadata.sparql
+#	new file:   sparql/SearchMetadataCount.sparql
+#	new file:   sparql/SearchSBOL.sparql
+#	new file:   sparql/SearchSBOLComponentSummary.sparql
+#	new file:   sparql/SearchSBOLComponentSummaryCount.sparql
+#	new file:   template/index.html
+#	new file:   turtle/lucene4.trig
+#
