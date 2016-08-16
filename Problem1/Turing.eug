@@ -1,0 +1,25 @@
+PartType Promoter();
+PartType CDS();
+PartType Terminator();
+
+Promoter p1(.pigeon("p p1 14"));
+Promoter p2(.pigeon("p p2 14"));
+Promoter p3(.pigeon("p p3 14"));
+Promoter p4(.pigeon("p p4 14"));
+
+CDS luxI();
+CDS GFP();
+CDS luxR();
+CDS ndh();
+CDS aiiA();
+
+Terminator T();
+
+
+Device Turing(p1, luxI, GFP, T, p2, luxR, T, p3, ndh, T, p4, aiiA, T);
+
+Rule induction1(ON Turing: luxI INDUCES p3 AND luxR INDUCES p3 AND luxI INDUCES p1 AND luxR INDUCES p1);
+Rule induction2(ON Turing: ndh INDUCES p4);
+Rule induction3(ON Turing: aiiA REPRESSES p1 AND aiiA REPRESSES p3);
+
+//SBOL.visualize();
