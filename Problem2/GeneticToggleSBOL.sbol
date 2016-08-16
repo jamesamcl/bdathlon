@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF8'?>
+<rdf:RDF xmlns:prov="http://www.w3.org/ns/prov#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sbol="http://sbols.org/v2#" xmlns:dcterms="http://purl.org/dc/terms/">
+  <sbol:ModuleDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/pLac_prod_GFP_pLac_prod_TetR/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/pLac_prod_GFP_pLac_prod_TetR" />
+    <sbol:displayId>pLac_prod_GFP_pLac_prod_TetR</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/pLac_prod_GFP_pLac_prod_TetR/pLac_prod_GFP_pLac_prod_TetR/1">
+        <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/pLac_prod_GFP_pLac_prod_TetR/pLac_prod_GFP_pLac_prod_TetR" />
+        <sbol:displayId>pLac_prod_GFP_pLac_prod_TetR</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000393" />
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_TetR_aTc/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_TetR_aTc" />
+    <sbol:displayId>Degradation_TetR_aTc</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_TetR_aTc/Degradation_TetR_aTc/1">
+        <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_TetR_aTc/Degradation_TetR_aTc" />
+        <sbol:displayId>Degradation_TetR_aTc</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000179" />
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Complex_LacI_IPTG/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Complex_LacI_IPTG" />
+    <sbol:displayId>Complex_LacI_IPTG</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Complex_LacI_IPTG/Complex_LacI_IPTG/1">
+        <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Complex_LacI_IPTG/Complex_LacI_IPTG" />
+        <sbol:displayId>Complex_LacI_IPTG</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000393" />
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/P0_prod_LacI__TetR/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/P0_prod_LacI__TetR" />
+    <sbol:displayId>P0_prod_LacI__TetR</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/P0_prod_LacI__TetR/P0_prod_LacI__TetR/1">
+        <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/P0_prod_LacI__TetR/P0_prod_LacI__TetR" />
+        <sbol:displayId>P0_prod_LacI__TetR</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000168" />
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/LacI_Inverter/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/LacI_Inverter" />
+    <sbol:displayId>LacI_Inverter</sbol:displayId>
+    <sbol:version>1</sbol:version>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_LacI/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_LacI" />
+    <sbol:displayId>Degradation_LacI</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_LacI/Degradation_LacI/1">
+        <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_LacI/Degradation_LacI" />
+        <sbol:displayId>Degradation_LacI</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000179" />
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_LacI_IPTG/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_LacI_IPTG" />
+    <sbol:displayId>Degradation_LacI_IPTG</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_LacI_IPTG/Degradation_LacI_IPTG/1">
+        <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_LacI_IPTG/Degradation_LacI_IPTG" />
+        <sbol:displayId>Degradation_LacI_IPTG</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000179" />
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_TetR/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_TetR" />
+    <sbol:displayId>Degradation_TetR</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_TetR/Degradation_TetR/1">
+        <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_TetR/Degradation_TetR" />
+        <sbol:displayId>Degradation_TetR</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000179" />
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/P0_prod_LacI/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/P0_prod_LacI" />
+    <sbol:displayId>P0_prod_LacI</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/P0_prod_LacI/P0_prod_LacI/1">
+        <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/P0_prod_LacI/P0_prod_LacI" />
+        <sbol:displayId>P0_prod_LacI</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000393" />
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_GFP/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_GFP" />
+    <sbol:displayId>Degradation_GFP</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_GFP/Degradation_GFP/1">
+        <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Degradation_GFP/Degradation_GFP" />
+        <sbol:displayId>Degradation_GFP</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000179" />
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/TetR_Inverter/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/TetR_Inverter" />
+    <sbol:displayId>TetR_Inverter</sbol:displayId>
+    <sbol:version>1</sbol:version>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/pLac_prod_GFP_pLac_prod_TetR__LacI/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/pLac_prod_GFP_pLac_prod_TetR__LacI" />
+    <sbol:displayId>pLac_prod_GFP_pLac_prod_TetR__LacI</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/pLac_prod_GFP_pLac_prod_TetR__LacI/pLac_prod_GFP_pLac_prod_TetR__LacI/1">
+        <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/pLac_prod_GFP_pLac_prod_TetR__LacI/pLac_prod_GFP_pLac_prod_TetR__LacI" />
+        <sbol:displayId>pLac_prod_GFP_pLac_prod_TetR__LacI</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000168" />
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ModuleDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Complex_TetR_aTc/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Complex_TetR_aTc" />
+    <sbol:displayId>Complex_TetR_aTc</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/Complex_TetR_aTc/Complex_TetR_aTc/1">
+        <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/Complex_TetR_aTc/Complex_TetR_aTc" />
+        <sbol:displayId>Complex_TetR_aTc</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000393" />
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ComponentDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/TetR/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/TetR" />
+    <sbol:displayId>TetR</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein" />
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/GFP/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/GFP" />
+    <sbol:displayId>GFP</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein" />
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/TetR_aTc/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/TetR_aTc" />
+    <sbol:displayId>TetR_aTc</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Complex" />
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/LacI/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/LacI" />
+    <sbol:displayId>LacI</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein" />
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/P0/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/P0" />
+    <sbol:displayId>P0</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion" />
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316" />
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/aTc/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/aTc" />
+    <sbol:displayId>aTc</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#SmallMolecule" />
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316" />
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/LacI_IPTG/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/LacI_IPTG" />
+    <sbol:displayId>LacI_IPTG</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Complex" />
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/pLac/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/pLac" />
+    <sbol:displayId>pLac</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion" />
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316" />
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://www.iwbdaconf.org/2016/#bdathlon/IPTG/1">
+    <sbol:persistentIdentity rdf:resource="http://www.iwbdaconf.org/2016/#bdathlon/IPTG" />
+    <sbol:displayId>IPTG</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#SmallMolecule" />
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316" />
+  </sbol:ComponentDefinition>
+</rdf:RDF>
